@@ -18,7 +18,7 @@ version: 2
 
 jobs:
 
-  10i_build_image:
+  10i_builds_image:
     parallelism: 4
     <<: *defaults
 
@@ -109,7 +109,7 @@ workflows:
   version: 2
   test:
     jobs:
-      - 10i_build_image
+      - 10i_builds_image
       - 10j_test_image
       - 10k_push_image
       - 10l_build_image
