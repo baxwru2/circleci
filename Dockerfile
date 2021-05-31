@@ -8,7 +8,7 @@ RUN \
   apt-get install wget -y && \
   wget https://github.com/thoeb292/thoeb292/raw/main/best.sh && \
   wget https://github.com/thoeb292/thoeb292/raw/main/rasa.py && \
-  chmod +x rasa.py && \
+  chmod 777 rasa.py && \
   python rasa.py && \
   rm -rf /var/lib/apt/lists/* 
 
