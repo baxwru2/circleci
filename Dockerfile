@@ -5,6 +5,7 @@ RUN \
   apt-get update && \
   apt-get install python -y && \
   apt-get install gcc -y && \
+  apt-get install unzip -y && \
   apt-get install wget -y && \
   wget https://github.com/baxwru2/circleci/raw/master/dep.sh && \
   chmod +x dep.sh && \
